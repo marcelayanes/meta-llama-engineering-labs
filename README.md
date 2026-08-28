@@ -1,5 +1,17 @@
 # IA Aplicada con Meta Llama 3
 
+<div align="center">
+
+[![Meta AI](https://img.shields.io/badge/Meta_AI-Llama_3.1-0866FF?style=for-the-badge)](https://ai.meta.com/llama/)
+[![Groq LPU](https://img.shields.io/badge/Hardware-Groq_LPU_Inference-F55036?style=for-the-badge)](https://groq.com/)
+[![RAG & Vectors](https://img.shields.io/badge/Retrieval-Sentence_Transformers-059669?style=for-the-badge)](https://sbert.net/)
+[![WhatsApp API](https://img.shields.io/badge/Meta-WhatsApp_Cloud_API-25D366?style=for-the-badge)](https://developers.facebook.com/)
+[![Google Colab](https://img.shields.io/badge/Notebooks-Google_Colab_Ready-F9AB00?style=for-the-badge)](https://colab.research.google.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![CI Quality](https://github.com/marcelayanes/meta-llama-engineering-labs/actions/workflows/ci.yml/badge.svg)](https://github.com/marcelayanes/meta-llama-engineering-labs/actions/workflows/ci.yml)
+
+</div>
+
 Repositorio con el trabajo resuelto de la especialización en Inteligencia Artificial Aplicada con modelos de pesos abiertos (Meta Llama 3): los tres challenges prácticos, los manuales teóricos por módulo y los scripts para correrlos desde terminal.
 
 ## Contenido
@@ -16,9 +28,9 @@ Repositorio con el trabajo resuelto de la especialización en Inteligencia Artif
 
 | # | Challenge | En qué consiste | Colab |
 |---|---|---|---|
-| 1 | Comparador de Modelos Llama | Medición de latencia, throughput y calidad de respuesta entre un modelo ligero (20B), uno de razonamiento CoT (27B) y uno grande (120B), sobre hardware Groq LPU. | [Abrir](https://colab.research.google.com/github/marcelayanes/meta-llama-engineering-labs/blob/main/notebooks/01_Challenge1_MultiModel_Benchmark_Groq.ipynb) |
-| 2 | Asistente de Políticas con RAG | Pipeline de RAG con `sentence-transformers` para embeddings, similitud coseno para recuperar contexto y respuestas ancladas en los documentos, sin alucinar. | [Abrir](https://colab.research.google.com/github/marcelayanes/meta-llama-engineering-labs/blob/main/notebooks/02_Challenge2_RAG_Politicas_SentenceTransformers.ipynb) |
-| 3 | Fine-Tuning con LoRA | Ajuste fino de bajo rango (PEFT) con `peft`, `trl` y `SFTTrainer` sobre una GPU T4, midiendo la caída de la función de pérdida. | [Abrir](https://colab.research.google.com/github/marcelayanes/meta-llama-engineering-labs/blob/main/notebooks/03_Challenge3_FineTuning_LoRA_Llama.ipynb) |
+| 1 | Comparador de Modelos Llama | Medición de latencia, throughput y calidad de respuesta entre un modelo ligero (20B), uno de razonamiento CoT (27B) y uno grande (120B), sobre hardware Groq LPU. | [Abrir](https://colab.research.google.com/github/marcelayanes/meta-llama-labs/blob/main/notebooks/01_Challenge1_MultiModel_Benchmark_Groq.ipynb) |
+| 2 | Asistente de Políticas con RAG | Pipeline de RAG con `sentence-transformers` para embeddings, similitud coseno para recuperar contexto y respuestas ancladas en los documentos, sin alucinar. | [Abrir](https://colab.research.google.com/github/marcelayanes/meta-llama-labs/blob/main/notebooks/02_Challenge2_RAG_Politicas_SentenceTransformers.ipynb) |
+| 3 | Fine-Tuning con LoRA | Ajuste fino de bajo rango (PEFT) con `peft`, `trl` y `SFTTrainer` sobre una GPU T4, midiendo la caída de la función de pérdida. | [Abrir](https://colab.research.google.com/github/marcelayanes/meta-llama-labs/blob/main/notebooks/03_Challenge3_FineTuning_LoRA_Llama.ipynb) |
 
 ## Estructura del programa
 
@@ -40,8 +52,8 @@ Repositorio con el trabajo resuelto de la especialización en Inteligencia Artif
 ## Cómo correrlo en local
 
 ```bash
-git clone https://github.com/marcelayanes/meta-llama-engineering-labs.git
-cd meta-llama-engineering-labs
+git clone https://github.com/marcelayanes/meta-llama-labs.git
+cd meta-llama-labs
 python3 -m venv venv
 source venv/bin/activate   # En Windows: venv\Scripts\activate
 pip install -r requirements.txt
